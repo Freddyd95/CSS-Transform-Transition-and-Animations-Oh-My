@@ -12,8 +12,16 @@ main {
   align-items: center;
 }
 
+h1 {
+  justify-content: center;
+}
+
 main > div {
   width: 40%;
   margin: auto;
   padding: 10%;
+}
+
+.wrapper {
+  transform: skew(5deg, -15deg);
 }
