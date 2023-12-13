@@ -25,3 +25,9 @@ button {
 button:hover {
   background-color: cornflowerblue;
 }
+
+.color-transition-button:hover {
+  background-color: cornflowerblue;
+  color: #cornflowerblue;
+}
+
