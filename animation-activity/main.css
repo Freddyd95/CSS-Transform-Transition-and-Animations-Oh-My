@@ -20,6 +20,9 @@ body  {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  position: relative;
+  cursor: pointer;
+  animation: rotateLine 0.3s ease-in-out forwards;
 }
 
 .hamburger div {
@@ -41,4 +44,27 @@ a {
 }
 a:hover {
   color: ghostwhite;
+
 }
+
+.top .middle .bottom::before,
+.top .middle .bottom::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background-color: #fff;
+    }
+
+
+    .top .bottom ::before {
+      transform: rotate(45deg);
+      transform-origin: 50% 100%;
+      left: 50%;
+    }
+
+    .top .bottom ::after {
+      transform: rotate(-45deg);
+      transform-origin: 50% 0%;
+      left: 50%;
+    }
